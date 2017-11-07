@@ -1,7 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <title>calamiti</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- 	Bootstrap Import -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600|Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="home.js"></script>
+</head>
+
+<span class="nav-trigger"></span>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="index.html">calamiti</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="step_dashboard.html">step-by-step <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">news & info</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">donate</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<div class="box">
+
+    <div class="title-box">
+        <div class="fadeintitle">
+            calamiti
+        </div>
+        <div class="intro" id= "intro-text"> 
+            Don't panic. We're here to <strong style="font-weight: 400">help</strong>.
+        </div>
+
+    </div>
+
+
+    <div class="selection-block"> 
+
+        <a href="step_dashboard.html" class="card">
+            <div class="card-title">step-by-step guide</div>
+            <img class="card-image" src="static/list.png">
+            <div class="card-text">
+                See what you need to do <strong style="font-weight: 600">before</strong>, <strong style="font-weight: 600">during</strong>, and <strong style="font-weight: 600">after</strong>.
+            </div>
+        </a>
+
+        <a href="" class="card">
+            <div class="card-title">disaster news & info</div>
+            <img class="card-image" src="static/earth-globe.png">
+            <div class="card-text">
+                Find <strong style="font-weight: 600">news</strong> and <strong style="font-weight: 600">information</strong> on ongoing disasters.
+            </div>
+        </a>
+
+        <a href="" class="card">
+            <div class="card-title">donate & help</div>
+            <img class="card-image" src="static/donation.png">
+            <div class="card-text">
+                Not going through a disaster? Send <strong style="font-weight: 600">help</strong> where it's needed.
+            </div>
+        </a>
+
+
+
+    </div>
+</div>
+
+<div class = "about-box">
+
+    <div class = "about-title" id = "abt-title">
+        who we are...
+    </div>
+
+</div>
+
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            document.getElementById("abt-title").className = "slideUp";
+        }
+    }
+
+    setTimeout(function(){
+        document.getElementById("intro-text").className = "fadeinintro"
+    }, 1000 );
+
+</script>
+
+<!-- 	Bootstrap required components -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 </html>

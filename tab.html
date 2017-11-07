@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Tab Shit</title>
+ <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- 	Bootstrap Import -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600|Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="tab_style.css"/>
+</head>
+<body>
+	<header class="calamiti-header">
+		<ul>
+			<li class="title-header btn btn-work">
+				<a href="home.html">Calamiti</a>
+			</li>
+			<li class="child btn btn-work">
+				<a href="home.html">step-by-step</a>
+			</li>
+			<li class="child btn btn-work">
+				<a href="home.html">news & info</a>
+			</li>
+			<li class="child btn btn-work">
+				<a href="home.html">donate</a>
+			</li>
+		</ul>
+
+	</header>
+	
+
+<script>
+	var OFFSET = 7;
+function navbarController() {
+    var triggerPosition = $('.nav-trigger').position().top + OFFSET;
+    $(window).on("scroll", function () {
+            var scrollPosition = scrollY || pageYOffset;
+            if (scrollPosition > triggerPosition) {
+                console.log("triggered!")
+                $('header').addClass('nav-fixed');
+                var navHeight = $(".nav-container").css('height');
+                $('.nav-ghost').height(navHeight);
+                $('.nav-ghost').show();
+            } else {
+                $('header').removeClass('nav-fixed');
+            }
+
+
+        }
+    )
+    ;
+}
+</script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

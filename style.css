@@ -1,0 +1,317 @@
+nav {
+    z-index: 11;
+    position: fixed;
+    transition: 0.4s
+}
+
+.navbar-fixed-top {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 20px;
+    
+    animation-name: fadein;
+    -webkit-animation-name: fadein;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+}
+
+.nav-trigger {
+    position: absolute;
+    top: 0px;
+}
+
+.navbar-brand{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 250%;
+    font-weight: 100;
+    padding: 0;
+    margin-right: 40px;
+}
+
+.nav-item{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 150%;
+    padding: 0px 10px 0px 10px;
+    line-height: 50px;
+    font-weight: 300;
+}
+.nav-item.active{
+    font-weight: 500;
+}
+
+
+
+.navbar-nav>li>a:hover {
+  background-color: #8a8a8a;
+transition: all 0.3s ease;
+    
+  
+}
+
+.navbar{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transition: 0.4s all;
+    top: -66px;
+}
+
+
+
+.box:before {
+	width: 101%;
+  height: 101%;
+
+    content: "";
+
+    left: -5px;
+    top:-5px;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    background-image: url("static/backgroundsmall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    filter:blur(5px);
+    -webkit-filter: blur(5px);
+
+    position: fixed;
+
+}
+
+
+
+
+
+.box {
+
+    background-size: cover;
+    display: block;
+    text-align: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.title-box {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 12vmax;
+    color: white;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.intro {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 3vw;
+    color: white;
+    margin: 0 auto;
+/*    padding-bottom: 25px;*/
+    display: block;
+    visibility: hidden;
+}
+
+.about-box{
+
+    padding: 10px;
+
+    height: 1000px;
+    margin: 0 auto;
+    background: white;
+
+
+}
+
+.about-title{
+    font-size: 6vw;
+    margin-left: 10%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    visibility: hidden;
+}
+
+hr {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid;
+}
+
+.selection-block {
+    display: block;	
+}
+
+
+.card {
+    text-decoration: none!important;
+    vertical-align: top;
+    align-items: center;
+    display: inline-block;
+    height: 350px;
+    width: 350px;
+    margin: 25px;
+    margin-top: 50px;
+    background-color: rgba(3, 3, 3, 0.3);
+    transition: all .2s;
+}
+
+.card:hover {
+    background-color: rgba(20, 20, 20, 0.8);
+    border: 2px solid white;
+}
+
+.card-image {
+    height: 200px;
+    width: 200px;
+    padding: 25px;
+}
+
+.card-title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    text-decoration: none;
+    padding-top: 15px;
+    font-size: 200%;
+    color: white;
+}
+
+.card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    height: 150px;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 125%;
+    color: white;
+}
+
+.slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+    font-size: 6vmax;
+    margin-left: 10%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+}
+
+.fadeintitle {
+    animation-name: slideUpSmall;
+    -webkit-animation-name: slideUpSmall;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 12vmax;
+    color: white;
+    display: block;
+}
+
+.fadeinintro {
+    animation-name: fadein;
+    -webkit-animation-name: fadein;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 3vw;
+    color: white;
+    margin: 0 auto;
+    /*padding-bottom: 25px;*/
+    display: block;
+}
+
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes slideUpSmall {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
