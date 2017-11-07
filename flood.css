@@ -79,7 +79,7 @@ div.tab {
 div.tab button {
     display: block;
     background-color: inherit;
-    color: white;
+    color: ;
     padding: 22px 16px;
     width: 100%;
     border: none;
@@ -88,18 +88,19 @@ div.tab button {
     cursor: pointer;
     transition: 0.3s;
     font-size: 200%;
-    font-weight: 100;
+    font-weight: 300;
     font-family: 'Work Sans', sans-serif;
 }
 
 /* Change background color of buttons on hover */
 div.tab button:hover {
-    background-color: #8a8a8a;
+    background-color: #B2DFDB;
 }
 
 /* Create an active/current "tab button" class */
 div.tab button.active {
     font-weight: bold;
+    color: #00796B;
 }
 
 /* Style the tab content */
@@ -112,14 +113,24 @@ div.tab button.active {
     height: 100%;
     font-family: 'Work Sans', sans-serif;
     font-size: 150%;
+    transition: all 0.5s ease;
 }
 
 .tabcontent h3 {
-    font-size: 600%;
+    font-size: 400%;
     text-align: center;
     font-weight: 100;
 
 }
+
+.tabcontent h2 {
+    font-size: 300%;
+    text-align: center;
+    font-weight: 500;
+    color: #00BFA5;
+
+}
+
 
 
 .navbar-brand{
