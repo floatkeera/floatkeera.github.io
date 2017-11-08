@@ -102,7 +102,8 @@ div.tab button:hover {
 /* Create an active/current "tab button" class */
 div.tab button.active {
     font-weight: bold;
-    color: #00796B;
+    
+    background-color: #e5e5e5;
 }
 
 /* Style the tab content */
@@ -117,6 +118,7 @@ div.tab button.active {
     font-weight: 300;
     font-size: 150%;
     transition: all 0.5s ease;
+    padding: 30px;
 }
 
 .tabcontent h3 {
