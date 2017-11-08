@@ -25,6 +25,8 @@ nav {
     -webkit-animation-duration: .5s;
 }
 
+
+
 .nav-trigger {
     position: absolute;
     top: 0px;
@@ -111,7 +113,8 @@ div.tab button.active {
     width: 80%;
     border-left: none;
     height: 100%;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 150%;
     transition: all 0.5s ease;
 }
@@ -120,15 +123,19 @@ div.tab button.active {
     font-size: 400%;
     text-align: center;
     font-weight: 100;
+     font-family: 'Work Sans', sans-serif;
 
 }
 
 .tabcontent h2 {
     font-size: 300%;
-    text-align: center;
+    
     font-weight: 500;
-    color: #00BFA5;
+    color: #00BFA5; font-family: 'Work Sans', sans-serif;
 
+}
+.tabcontent h1 {
+    font-family: 'Work Sans', sans-serif;
 }
 
 
