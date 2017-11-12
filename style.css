@@ -1,7 +1,8 @@
 nav {
     z-index: 11;
     position: fixed;
-    transition: 0.4s
+    transition: 0.4s;
+    top: -66px;
 }
 
 .navbar-fixed-top {

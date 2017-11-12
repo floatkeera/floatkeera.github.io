@@ -11,9 +11,9 @@ function navbarController() {
             if (scrollPosition > triggerPosition) {
                 console.log("triggered!")
 
-                $('nav').addClass('navbar-fixed-top').removeClass('navbar');
+                $('nav').css("top" , "0px")
             } else {
-                $('nav').addClass('navbar').removeClass('navbar-fixed-top');
+                $('nav').css("top" , "-66px")
             }
 
 
