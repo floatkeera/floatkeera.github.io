@@ -1,0 +1,377 @@
+nav {
+    z-index: 11;
+    position: fixed;
+    transition: 0.4s
+}
+
+.navbar {
+	top: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 20px;
+    animation-name: fadein;
+    -webkit-animation-name: fadein;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+}
+
+.nav-trigger {
+    position: absolute;
+    top: 0px;
+}
+
+.navbar-brand{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 250%;
+    font-weight: 100;
+    padding: 0;
+    margin-right: 40px;
+}
+
+.nav-item{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 150%;
+    padding: 0px 10px 0px 10px;
+    line-height: 50px;
+    font-weight: 300;
+}
+.nav-item.active{
+    font-weight: 500;
+}
+
+
+
+.navbar-nav>li>a:hover {
+  background-color: #8a8a8a;
+transition: all 0.3s ease;
+     
+}
+
+
+
+.background {
+	width: 101%;
+	height: 101%;
+	background-image: url("static/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	position: fixed;
+	top: -.5%;
+	left: -.5%;
+	z-index: -1;
+}
+
+
+.box {
+	background-size: cover;
+    display: block;
+    text-align: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.title-box {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+    font-size: 6vmax;
+    margin-left: 10%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+}
+
+.fadeintitle {
+    animation-name: slideUpSmall;
+    -webkit-animation-name: slideUpSmall;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 9vmax;
+    color: white;
+    display: block;
+
+}
+
+.top-block{
+	height: 75px;
+	margin-top: 25px;
+}
+
+
+.search-box {
+	animation-name: fadein;
+    -webkit-animation-name: fadein;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+    font-family: 'Work Sans', sans-serif;
+	text-align: center;
+	font-weight: 100;
+	font-size: 3vmax;
+	color: white;
+	margin: 0 auto;
+	display: block;
+	border: none!important;
+}
+
+input, select, textarea{
+    color: black;
+    font-weight: 100;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    black;
+    font-weight: 100;
+    padding-left: 5px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    black;
+   opacity:  1;
+   font-weight: 100;
+   padding-left: 5px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    black;
+   opacity:  1;
+   font-weight: 100;
+   padding-left: 5px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    black;
+   font-weight: 100;
+   padding-left: 5px;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    black;
+   font-weight: 100;
+   padding-left: 5px;
+
+	color: black;
+	margin: 0 auto;
+	display: block;
+    width: 80%;
+}
+
+.quicksearch{
+
+    width: 80%;
+    font-weight: 300;
+	font-size: 3vmax;
+}
+
+.intro {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-weight: 300;
+	font-size: 1vw;
+	color: white;
+	margin: 0 auto;
+	padding-bottom: 25px;
+	display: block;
+}
+
+hr {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	border: 1px solid;
+}
+
+
+
+
+.grid {
+	display: flex;
+    justify-content:space-between;
+    align-items: center;
+	text-align: center;
+	margin:0 auto;
+}
+
+
+.element-item {
+	margin: 15px;
+    
+	text-decoration: none!important;
+	vertical-align: top;
+	align-items: center;
+	text-align:center;
+
+
+	height: 250px;
+	width: 250px;
+
+
+
+	background-color: rgba(3, 3, 3, 0.3);
+    transition: border 0.4s ease;
+    transition: background-color 0.4s ease;
+	
+}
+
+
+.element-item:hover {
+	background-color: rgba(20, 20, 20, 0.8);
+    border: 2px solid white;
+}
+
+.card-image {
+	height: 140px;
+	width: 140px;
+	padding: 25px;
+}
+
+.name {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	text-decoration: none;
+	padding-top: 15px;
+	font-size: 200%;
+	color: white;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.navbar-brand{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 250%;
+    font-weight: 100;
+    padding: 0;
+    margin-right: 40px;
+}
+
+.nav-item{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 150%;
+    padding: 0px 10px 0px 10px;
+    line-height: 50px;
+    font-weight: 300;
+}
+.nav-item.active{
+    font-weight: 500;
+}
+
+
+
+.navbar-nav>li>a:hover {
+  background-color: #8a8a8a;
+transition: all 0.5s ease;
+    
+  
+}
+
+
+
+
+.navbar{
+      padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+
+
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes slideUpSmall {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
