@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disaster News</title>
+
+	<!-- 	Bootstrap Import -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600|Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style_news_dashboard.css"/>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+	<script type="text/javascript" src="news_dashboard.js"></script>
+
+</head>
+    
+    
+    	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">calamiti</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="index.html">home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="step_dashboard.html">step-by-step<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="news_dashboard.html">disaster news<span class="sr-only">(current)</span></a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link" href="#">donate<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+	
+
+<body>
+
+	<div class="box">
+
+		<div class="title-box">
+       		 <div class="fadeintitle">
+           		 disaster news
+       		 </div>
+
+			<div class="top-block">
+				<div class="search-box">
+					<p><input type="text" class="quicksearch" placeholder="what crisis are you looking for?" onclick="this.placeholder=''"; /></p>
+				</div>
+
+   			 </div>
+   		</div>
+
+		<div class="grid"> 
+
+			<a href="irma.html" class="element-item" name="Irma">
+				<img class="card-image" src="static/irma.jpg">
+					<div class="name">Hurricane Irma</div>
+					<div class="location">Location: Florida, USA</div>
+					<div class="stat">Wind Speed: 169mph</div>
+			</a>
+
+			<a href="" class="element-item" name="Mexico">
+				<img class="card-image" src="static/mexico_eq.jpg">
+					<div class="name">Hurricane Irma</div>
+					<div class="location">Location: Mexico</div>
+					<div class="stat">Wind Speed: 169mph</div>
+			</a>
+
+			<a href="" class="element-item" name="Kansas">
+				<img class="card-image" src="static/kansas_tornado.jpg">
+					<div class="name">Hurricane Irma</div>
+					<div class="location">Location: Kansas, USA</div>
+					<div class="stat">Wind Speed: 169mph</div>
+			</a>
+			
+		</div>
+	</div>
+
+	<div class="background"></div>
+
+
+
+	<!-- 	Bootstrap required components -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

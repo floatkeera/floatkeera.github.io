@@ -96,7 +96,7 @@ div.tab button {
 
 /* Change background color of buttons on hover */
 div.tab button:hover {
-    background-color: #B2DFDB;
+    background-color: #cccccc;
 }
 
 /* Create an active/current "tab button" class */
@@ -119,6 +119,7 @@ div.tab button.active {
     font-size: 150%;
     transition: all 0.5s ease;
     padding: 30px;
+    visibility: hidden;
 }
 
 .tabcontent h3 {
@@ -138,6 +139,25 @@ div.tab button.active {
 }
 .tabcontent h1 {
     font-family: 'Work Sans', sans-serif;
+}
+
+.tabcontent.active{
+     animation-name: slideRight;
+    -webkit-animation-name: slideRight;
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 80%;
+    border-left: none;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 150%;
+    transition: all 0.5s ease;
+    padding: 30px;
+    visibility: visible;
 }
 
 
@@ -170,7 +190,34 @@ transition: all 0.5s ease;
   
 }
 
+.box>h3{
+    text-align: center;
+}
+
 .navbar{
       padding-top: 0px;
     padding-bottom: 0px;
 }
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-5%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slideRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-5%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
