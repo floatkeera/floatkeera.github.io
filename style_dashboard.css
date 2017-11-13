@@ -90,6 +90,11 @@ transition: all 0.3s ease;
     text-align: center;
 }
 
+.outer-grid{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
 
 .slideUp {
     animation-name: slideUp;
@@ -212,11 +217,7 @@ hr {
 
 
 .grid {
-	display: flex;
-    justify-content:space-between;
-    align-items: center;
-	text-align: center;
-	margin:0 auto;
+    margin: 0 auto;
 }
 
 
@@ -224,15 +225,11 @@ hr {
 	margin: 15px;
     
 	text-decoration: none!important;
-	vertical-align: top;
-	align-items: center;
-	text-align:center;
-
+	
 
 	height: 250px;
 	width: 250px;
-
-
+    float: left;
 
 	background-color: rgba(3, 3, 3, 0.3);
     transition: border 0.4s ease;
