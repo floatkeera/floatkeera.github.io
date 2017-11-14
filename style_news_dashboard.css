@@ -1,3 +1,5 @@
+html { overflow-y: scroll; }
+
 nav {
     z-index: 11;
     position: fixed;
@@ -126,6 +128,7 @@ transition: all 0.3s ease;
 .top-block{
     height: 75px;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 
@@ -218,6 +221,7 @@ hr {
 
 .grid {
     margin: 0 auto;
+    width: 90%;
 }
 
 
@@ -228,7 +232,7 @@ hr {
     
 
     height: 250px;
-    width: 90%;
+    width: 100%;
     float: left;
 
     background-color: rgba(255, 255, 255, 0.9);
@@ -246,13 +250,17 @@ hr {
      text-decoration: none!important;
      font-size: 150%;
      color: #666666;
+    font-family: 'Open Sans', sans-serif;
+
 
 }
 
 .location{
      text-decoration: none!important;
-     font-size: 150%;
+     font-size: 200%;
      color: #666666;
+    font-family: 'Open Sans', sans-serif;
+       font-weight: 600;
 
 }
 
