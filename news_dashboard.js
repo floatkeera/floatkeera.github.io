@@ -8,11 +8,7 @@ var qsRegex;
 // init Isotope
 var $grid = $('.grid').isotope({
   itemSelector: '.element-item',
-
-    masonry: {
-    columnWidth: '.element-item',
-    isFitWidth: true
-  },
+     layoutMode: 'fitRows',
    
   filter: function() {
     return qsRegex ? $(this).text().match( qsRegex ) : true;

@@ -1,3 +1,6 @@
+html { overflow-y: scroll;
+overflow-x: hidden;}
+
 nav {
     z-index: 11;
     position: fixed;
@@ -126,6 +129,7 @@ transition: all 0.3s ease;
 .top-block{
 	height: 75px;
 	margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 
