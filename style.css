@@ -266,6 +266,12 @@ hr {
     display: block;
 }
 
+.about-pic2 {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+}
+
 
 .title_break {
     visibility: hidden;
@@ -274,6 +280,34 @@ hr {
     font-weight: 100;
     font-size: 8vmax;
     color: white;
+    display: block;
+}
+
+.abt-break-intro {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 3vw;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    visibility: hidden;
+    padding-bottom: 50px;
+}
+
+.abt-break-intro-fade {
+    animation-name: fadein;
+    -webkit-animation-name: fadein;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 3vw;
+    color: white;
+    margin: 0 auto;
+    padding-bottom: 50px;
     display: block;
 }
 
@@ -289,6 +323,39 @@ hr {
     font-size: 8vmax;
     color: white;
     display: block;
+}
+
+.slogan {
+    visibility: hidden;
+}
+
+.slogan2 {
+    visibility: hidden;
+}
+
+.slogan_fade {
+    animation-name: slideUpSmall;
+    -webkit-animation-name: slideUpSmall;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+.disaster_news {
+    width: 100%;
+    display: inline-block;
+    padding-top: 25px;
+}
+
+.news_side_text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.5vw;
+    width: 60%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 
