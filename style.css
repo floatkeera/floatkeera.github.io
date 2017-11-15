@@ -133,10 +133,8 @@ transition: all 0.3s ease;
 }
 
 .about-box{
-
     padding: 10px;
-
-    height: 1000px;
+    height: 1300px;
     margin: 0 auto;
     background: white;
 
@@ -144,8 +142,8 @@ transition: all 0.3s ease;
 }
 
 .about-title{
-    font-size: 6vw;
-    margin-left: 10%;
+    font-size: 8vw;
+    margin-left: 5%;
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
     visibility: hidden;
@@ -214,8 +212,8 @@ hr {
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     visibility: visible;
-    font-size: 6vmax;
-    margin-left: 10%;
+    font-size: 8vmax;
+    margin-left: 5%;
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
 }
@@ -247,6 +245,49 @@ hr {
     color: white;
     margin: 0 auto;
     /*padding-bottom: 25px;*/
+    display: block;
+}
+
+.about-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.5vw;
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 80%;
+    /*visibility: hidden;*/
+
+}
+
+.about-pic {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.title_break {
+    visibility: hidden;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 8vmax;
+    color: white;
+    display: block;
+}
+
+.title_break_fade {
+    animation-name: slideUpSmall;
+    -webkit-animation-name: slideUpSmall;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 8vmax;
+    color: white;
     display: block;
 }
 

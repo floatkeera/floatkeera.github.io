@@ -92,11 +92,33 @@
 <div class = "about-box">
 
     <div class = "about-title" id = "abt-title">
-        who we are...
+        what is <span style="color: #00BFA5;">calamiti</span>?
     </div>
 
+    <div class="about-text">During any type of natural disaster, finding imformation quickly can <strong style="font-weight: 600;">save your life</strong>. That's why <span style="font-family: 'Work Sans', sans-serif; font-weight: 200; font-size: 2.6vw;"> calamiti </span> aims to simplify the online user experience for finding <strong style="font-weight: 600;">quick</strong> and <strong style="font-weight: 600;">accurate</strong> information. <span style="font-family: 'Work Sans', sans-serif; font-weight: 200; font-size: 2.6vw;"> Calamiti </span> is here to help you <strong style="font-weight: 600;">before</strong>, <strong style="font-weight: 600;">during</strong>, and <strong style="font-weight: 600;">after</strong> any global natural disaster. 
+    <br>
+    <br>
+    <strong style="font-weight: 600;">It's everything you need, and nothing you don't.</strong>  
+    <br>
+    <br>
+    </div>
+    <img src="static/calamiti_about.png" class="about-pic">
 </div>
 
+<div class="title_break" id="abt-break">a comprehensive natural disaster hub</div>
+
+<div class = "about-box">
+
+
+    <div class="about-text">During any type of natural disaster, finding imformation quickly can <strong style="font-weight: 600;">save your life</strong>. That's why <span style="font-family: 'Work Sans', sans-serif; font-weight: 200; font-size: 2.6vw;"> calamiti </span> aims to simplify the online user experience for finding <strong style="font-weight: 600;">quick</strong> and <strong style="font-weight: 600;">accurate</strong> information. <span style="font-family: 'Work Sans', sans-serif; font-weight: 200; font-size: 2.6vw;"> Calamiti </span> is here to help you <strong style="font-weight: 600;">before</strong>, <strong style="font-weight: 600;">during</strong>, and <strong style="font-weight: 600;">after</strong> any global natural disaster. 
+    <br>
+    <br>
+    <strong style="font-weight: 600;">It's everything you need, and nothing you don't.</strong>  
+    <br>
+    <br>
+    </div>
+    <img src="static/calamiti_about.png" class="about-pic">
+</div>
 
 
 <script>
@@ -106,6 +128,11 @@
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             document.getElementById("abt-title").className = "slideUp";
         }
+
+        if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+            document.getElementById("abt-break").className = "title_break_fade";
+        }
+
     }
 
     setTimeout(function(){
