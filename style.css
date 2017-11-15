@@ -334,8 +334,8 @@ hr {
 }
 
 .slogan_fade {
-    animation-name: slideUpSmall;
-    -webkit-animation-name: slideUpSmall;
+    animation-name: fadein;
+    -webkit-animation-name: fadein;
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     visibility: visible;
