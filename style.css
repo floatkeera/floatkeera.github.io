@@ -141,19 +141,21 @@ transition: all 0.3s ease;
 }
 
 .about-title{
-    font-size: 8vw;
-    margin-left: 5%;
+    font-size: 6vw;
+    margin: 0 auto;
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
     visibility: hidden;
 }
 
 hr {
-    width: 90%;
-    margin: 0 auto;
+    width: 60%;
+    margin-top: 50px;
     display: block;
-    border: 1px solid;
+    border: solid 0.5px black;
+    
 }
+
 
 .selection-block {
     display: block;	
@@ -204,6 +206,11 @@ hr {
     font-size: 125%;
     color: white;
 }
+.info-title{
+     font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+}
 
 .slideUp {
     animation-name: slideUp;
@@ -211,10 +218,11 @@ hr {
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     visibility: visible;
-    font-size: 8vmax;
-    margin-left: 5%;
+    font-size: 6vmax;
+    margin: 0 auto;
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
+    width: 80%;
 }
 
 .fadeintitle {
@@ -250,13 +258,24 @@ hr {
 .about-text {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 2.5vw;
-    margin-left: 5%;
-    margin-top: 3%;
+    font-size: 2vw;
+
+    margin: 0 auto;
+
     width: 80%;
     /*visibility: hidden;*/
 
 }
+
+.about-slogan{
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3vw;
+     visibility: hidden;
+}
+
+
 
 .about-pic {
     width: 90%;
@@ -338,6 +357,11 @@ hr {
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     visibility: visible;
+     font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3vw;
+    color: #00BFA5
 }
 
 .disaster_news {
