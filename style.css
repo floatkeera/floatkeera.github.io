@@ -143,7 +143,7 @@ transition: all 0.3s ease;
 }
 
 .about-title{
-    font-size: 6vw;
+    font-size: 200%;
     margin: 0 auto;
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
@@ -211,7 +211,7 @@ hr {
 .info-title{
      font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 30pt;
     width:80%;
     margin: 0 auto;
 }
@@ -222,7 +222,7 @@ hr {
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     visibility: visible;
-    font-size: 5vmax;
+    font-size: 60pt;
     margin: 0 auto;
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
@@ -262,7 +262,7 @@ hr {
 .about-text {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 2vw;
+    font-size: 20pt;
 
     margin: 0 auto;
 
@@ -275,7 +275,7 @@ hr {
     font-family: 'Work Sans', sans-serif;
     text-align: center;
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 30pt;
      visibility: hidden;
 }
 
@@ -364,7 +364,7 @@ hr {
      font-family: 'Work Sans', sans-serif;
     text-align: center;
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 30pt;
     color: #00BFA5
 }
 
@@ -387,15 +387,19 @@ hr {
 .bt {
     
     background-color: #00BFA5;
-    width: 300px;
-    height: 50px;
+    width: max-content;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
     font-family: 'Work Sans';
-    font-size: 18;
+    font-size: 20pt;
     line-height: 50px;
     margin: 0 auto;
     text-align: center;
     vertical-align: middle;
     color: white;
+    font-weight: 400;
     
 
     -webkit-transition: all 0.3s ease-in;
@@ -406,6 +410,7 @@ hr {
     position: relative;
     text-transform: uppercase;
     border-radius: 30px;
+     border: solid 1px #00BFA5;
      
 }
 
@@ -425,7 +430,7 @@ hr {
 
 
 .carousel.slide {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     padding-top: 25px;
 }
@@ -494,10 +499,16 @@ hr {
 
 h3{
     font-family: 'Work Sans';
-    font-size: 24pt;
-     background-color: rgba(20, 20, 20, 0.7);
+    font-size: 30pt;
+    /* background-color: rgba(20, 20, 20, 0.7);
     padding: 2px;
-     border-radius: 30px;
+     border-radius: 30px;*/
+   
+
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 
