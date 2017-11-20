@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="donate.css"/>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-	<script type="text/javascript" src="step_dashboard.js"></script>
+	<script type="text/javascript" src="donate.js"></script>
 
 </head>
 
@@ -41,8 +41,10 @@
 </nav>
 
 
-
 <body>
+
+
+
 
     <div class="box">
 
@@ -57,8 +59,9 @@
                 </div>
                 <div>
                 <div class="switch_text">donation center</div>
-                <label class="switch">
-                  <input type="checkbox">
+                <label id="filters" class="switch">
+
+                  <input type="checkbox" data-filter=".disaster">
                   <span class="slider round"></span>
               </label>
               <div class="switch_text">disaster</div>
@@ -71,32 +74,32 @@
 
           <div class="grid"> 
 
-            <a href="" class="element-item" name="Earthquake">
+            <a href="" class="element-item organization" name="Earthquake">
                 <div class="name">The Salvation Army</div>
                 <img class="card-image" src="static/Salvation_Army.png">
             </a>
 
-            <a href="" class="element-item" name="Fire">
+            <a href="" class="element-item organization" name="Fire">
                 <div class="name">American Red Cross</div>
                 <img class="card-image" src="static/red_cross.png">
             </a>
 
-            <a href="flood.html" class="element-item" name="Flash Flood">
+            <a href="flood.html" class="element-item organization" name="Flash Flood">
                 <div class="name">Save the Children</div>
                 <img class="card-image" src="static/save_children.png">
             </a>
 
-            <a href="" class="element-item" name="Hurricane">
+            <a href="" class="element-item disaster" name="Hurricane">
                 <div class="name">Hurricane</div>
                 <img class="card-image" src="static/storm.png">
             </a>
 
-            <a href="" class="element-item" name="Tornado">
+            <a href="" class="element-item disaster" name="Tornado">
                 <div class="name">Tornado</div>
                 <img class="card-image" src="static/tornado.png">
             </a>
 
-            <a href="" class="element-item" name="Tsunami">
+            <a href="" class="element-item disaster" name="Tsunami">
                 <div class="name">Tsunami</div>
                 <img class="card-image" src="static/tsunami.png">
             </a>

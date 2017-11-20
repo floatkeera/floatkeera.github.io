@@ -364,6 +364,11 @@ input:checked + .slider:before {
 
 
 /* Rounded sliders */
+
+.hidden_check {
+    /*visibility: hidden;*/
+}
+
 .slider.round {
   border-radius: 34px;
 }
