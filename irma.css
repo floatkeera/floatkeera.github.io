@@ -62,6 +62,7 @@ transition: all 0.3s ease;
 .box {
     width: 100%;
     height: 100%;
+ 
 
 }
 
@@ -70,12 +71,13 @@ div.tab {
     float: left;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: 20%;
+    width: max-content;
     color: lightgrey;
     font-family: 'Work Sans', sans-serif;
     vertical-align: middle;
     padding-top: 20px;
     position: fixed;
+    padding: 10px;
     top: 66px;
 }
 
@@ -83,12 +85,13 @@ div.tab-hidden {
     float: left;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: 20%;
+    width: max-content;
     color: lightgrey;
     font-family: 'Work Sans', sans-serif;
     vertical-align: middle;
     padding-top: 20px;
     visibility: hidden;
+    padding: 10px;
 }
 
 
@@ -124,6 +127,12 @@ div.tab button.active {
 
 }
 
+h5{
+    color: black;
+    font-size: 24pt;
+    font-weight: 600; 
+}
+
 .tabcontent h3 {
     font-size: 400%;
     text-align: center;
@@ -142,7 +151,6 @@ div.tab button.active {
 .tabcontent h1 {
     font-family: 'Work Sans', sans-serif;
 }
-
 
 
 .navbar-brand{
@@ -181,17 +189,20 @@ transition: all 0.5s ease;
 
 .stat h6{
     display: block;
-    font-size: 1.5vw;
+    font-size: 16pt;
     margin: 0;
-    text-align: center;
-    color: #bbbbbb;
+    margin-bottom: -10px;
+    text-transform: uppercase;
+
+    color: #777777;
 }
 
 .stat h3{
     display: block;
-    font-size: 5vw;
+    font-size: 48pt;
     color: #00BFA5;
-    text-align: center;
+    font-weight: 200;
+
     padding-bottom: 15px;
 }
 
