@@ -1,9 +1,9 @@
 
-$(function(){
+ $(function(){
    //your code here
 
 // quick search regex
-var qsRegex = "";
+var qsRegex = '';
 var counter = 0;
 
 
@@ -18,19 +18,13 @@ var $grid = $('.grid').isotope({
 
   filter: function() {
     if (qsRegex == '') {
-      return "organization"
+      return ".organization"
     }
     return qsRegex ? $(this).text().match( qsRegex ) : true;
   }
 });
 
-
-if ($('.hidden_check').prop('checked', true)) {
-  console.log('checked')
-  var filterValue = $('.hidden_check').attr('data-filter');
-  $grid.isotope({ filter: filterValue });
-
-}
+$grid.isotope();
 
 
 $('#filters').on( 'change', 'input', function() {
@@ -56,7 +50,6 @@ var $quicksearch = $('.quicksearch').keyup( debounce( function() {
 }, 200 ) );
 
 
-console.log($quicksearch.val());
 // debounce so filtering doesn't happen every millisecond
 function debounce( fn, threshold ) {
   var timeout;
