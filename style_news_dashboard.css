@@ -239,7 +239,7 @@ hr {
     transition: border 0.4s ease;
     transition: background-color 0.4s ease;
     align-items:left;
-   box-shadow: 5px 5px 5px #333333;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    text-align: left;
 
 
