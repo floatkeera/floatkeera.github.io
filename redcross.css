@@ -72,6 +72,7 @@ div.tab {
     background-color: #f1f1f1;
     width: 20%;
     height: 100%;
+    font-size: 120%;
     color: lightgrey;
     font-family: 'Work Sans', sans-serif;
     vertical-align: middle;
@@ -154,7 +155,7 @@ div.tab button.active {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 150%;
+    font-size: 140%;
     transition: all 0.5s ease;
     padding: 30px;
     visibility: visible;
@@ -221,3 +222,57 @@ transition: all 0.5s ease;
     }
 }
 
+.bt {
+    
+    background-color: #00BFA5;
+    width: max-content;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
+    font-family: 'Work Sans';
+    font-size: 20pt;
+    line-height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-weight: 400;
+    
+
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    position: relative;
+    text-transform: uppercase;
+    border-radius: 30px;
+     border: solid 1px #00BFA5;
+     
+}
+.bt:hover{
+     background-color: white;
+    color: #00BFA5;
+    border: solid 1px #00BFA5;
+}
+
+.bt>a{
+     text-decoration: none!important;
+    color:white;
+}
+.bt>a:hover{
+     color: #00BFA5;
+}
+
+.btnss{
+    display:flex;
+}
+
+
+
+.carousel.slide {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 25px;
+}
