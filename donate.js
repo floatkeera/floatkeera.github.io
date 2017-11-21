@@ -1,6 +1,4 @@
-
- $(function(){
-   //your code here
+$(function(){
 
 // quick search regex
 var qsRegex = '';
@@ -24,8 +22,6 @@ var $grid = $('.grid').isotope({
   }
 });
 
-$grid.isotope();
-
 
 $('#filters').on( 'change', 'input', function() {
   counter= counter +1;
@@ -38,11 +34,6 @@ $('#filters').on( 'change', 'input', function() {
     $grid.isotope({ filter: '.organization' });
   }
 });
-// use value of search field to filter
-// var $quicksearch = $('.quicksearch').keyup( debounce( function() {
-//   qsRegex = new RegExp( $quicksearch.val(), 'gi' );
-//   $grid.isotope();
-// }, 200 ) );
 
 var $quicksearch = $('.quicksearch').keyup( debounce( function() {
   qsRegex = new RegExp( $quicksearch.val(), 'gi' );
@@ -64,4 +55,29 @@ function debounce( fn, threshold ) {
    timeout = setTimeout( delayed, threshold || 100 );
  }
 }
+
+
+
 });
+
+
+function load() {
+var qsRegex;
+
+  var $grid = $('.grid').isotope({
+    itemSelector: '.element-item',
+
+    masonry: {
+      columnWidth: '.element-item',
+      isFitWidth: true
+    },
+
+    filter: function() {
+      if (qsRegex == '') {
+        return ".organization"
+      }
+      return qsRegex ? $(this).text().match( qsRegex ) : true;
+    }
+  });
+  $grid.isotope({ filter: '.organization' });
+}
