@@ -138,6 +138,8 @@ transition: all 0.3s ease;
     padding-bottom: 40px;
     margin: 0 auto;
     background: white;
+    width: 90%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 
 }
