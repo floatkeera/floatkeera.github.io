@@ -1,5 +1,5 @@
 
-$(function(){
+ $(function(){
    //your code here
 
 // quick search regex
