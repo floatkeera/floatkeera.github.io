@@ -152,6 +152,7 @@ div.tab button.active {
     border: 1px solid #ccc;
     width: 80%;
     border-left: none;
+    border-bottom: none;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -161,6 +162,11 @@ div.tab button.active {
     visibility: visible;
 }
 
+.title_img {
+    width: 10vw;
+    height: 10vw;
+    margin-left: 42%;
+}
 
 
 .navbar-brand{
