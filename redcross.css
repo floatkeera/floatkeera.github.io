@@ -1,0 +1,223 @@
+nav {
+    z-index: 11;
+    position: fixed;
+    transition: 0.4s
+}
+
+.navbar {
+    top: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 20px;
+    
+    animation-name: fadein;
+    -webkit-animation-name: fadein;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+}
+
+
+
+.nav-trigger {
+    position: absolute;
+    top: 0px;
+}
+
+.navbar-brand{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 250%;
+    font-weight: 100;
+    padding: 0;
+    margin-right: 40px;
+}
+
+.nav-item{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 150%;
+    padding: 0px 10px 0px 10px;
+    line-height: 50px;
+    font-weight: 300;
+}
+.nav-item.active{
+    font-weight: 500;
+}
+
+
+
+.navbar-nav>li>a:hover {
+  background-color: #8a8a8a;
+transition: all 0.3s ease;
+     
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Style the tab */
+div.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 20%;
+    height: 100%;
+    color: lightgrey;
+    font-family: 'Work Sans', sans-serif;
+    vertical-align: middle;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: ;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 200%;
+    font-weight: 300;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #cccccc;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    font-weight: bold;
+    
+    background-color: #e5e5e5;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 80%;
+    border-left: none;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 150%;
+    transition: all 0.5s ease;
+    padding: 30px;
+    visibility: hidden;
+}
+
+.tabcontent h3 {
+    font-size: 400%;
+    text-align: center;
+    font-weight: 100;
+     font-family: 'Work Sans', sans-serif;
+
+}
+
+.tabcontent h2 {
+    font-size: 300%;
+    
+    font-weight: 500;
+    color: #00BFA5; font-family: 'Work Sans', sans-serif;
+
+}
+.tabcontent h1 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.tabcontent.active{
+     animation-name: slideRight;
+    -webkit-animation-name: slideRight;
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 80%;
+    border-left: none;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 150%;
+    transition: all 0.5s ease;
+    padding: 30px;
+    visibility: visible;
+}
+
+
+
+.navbar-brand{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 250%;
+    font-weight: 100;
+    padding: 0;
+    margin-right: 40px;
+}
+
+.nav-item{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 150%;
+    padding: 0px 10px 0px 10px;
+    line-height: 50px;
+    font-weight: 300;
+}
+.nav-item.active{
+    font-weight: 500;
+}
+
+
+
+.navbar-nav>li>a:hover {
+  background-color: #8a8a8a;
+transition: all 0.5s ease;
+    
+  
+}
+
+.box>h3{
+    text-align: center;
+}
+
+.navbar{
+      padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-5%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slideRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-5%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
