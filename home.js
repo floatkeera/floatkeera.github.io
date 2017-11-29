@@ -1,6 +1,11 @@
+
+
 $(document).ready(function () {
     navbarController();
 });
+
+
+   
 
 var OFFSET = 400;
 function navbarController() {
@@ -21,3 +26,4 @@ function navbarController() {
     )
     ;
 }
+

@@ -71,7 +71,7 @@ div.tab {
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     width: 20%;
-    height: 100%;
+    height: auto;
     font-size: 120%;
     color: lightgrey;
     font-family: 'Work Sans', sans-serif;
@@ -124,7 +124,7 @@ div.tab button.active {
 }
 
 .tabcontent h3 {
-    font-size: 400%;
+    font-size: 50pt;
     text-align: center;
     font-weight: 100;
      font-family: 'Work Sans', sans-serif;
@@ -132,7 +132,7 @@ div.tab button.active {
 }
 
 .tabcontent h2 {
-    font-size: 300%;
+    font-size: 30pt;
     
     font-weight: 500;
     color: #00BFA5; font-family: 'Work Sans', sans-serif;
@@ -278,7 +278,74 @@ transition: all 0.5s ease;
 
 
 .carousel.slide {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     padding-top: 25px;
+    height: auto;
 }
+
+ .carousel img {
+        width:100% !important;
+        min-width:100 !important;
+        height: auto;
+    }
+
+h4{
+    font-family: 'Work Sans';
+    font-size: 16pt;
+    /* background-color: rgba(20, 20, 20, 0.7);
+    padding: 2px;
+     border-radius: 30px;*/
+   
+
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.caption-animate .carousel-item.active .carousel-caption {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.caption-animate  .carousel-item.active .carousel-caption.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.caption-animate  .carousel-item.active .carousel-caption.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.caption-animate .carousel-carousel-item.active .carousel-caption.flipOutX,
+.caption-animate .carousel-item.active .carousel-caption.flipOutY,
+.caption-animate .carousel-item.active .carousel-caption.bounceIn,
+.caption-animate .carousel-item.active .carousel-caption.bounceOut {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+.caption-animate .carousel-item .carousel-caption.fadeIn,
+.caption-animate .carousel-item .carousel-caption.fadeInDown,
+.caption-animate .carousel-item .carousel-caption.fadeInDownBig,
+.caption-animate .carousel-item .carousel-caption.fadeInLeft,
+.caption-animate .carousel-item .carousel-caption.fadeInLeftBig,
+.caption-animate .carousel-item .carousel-caption.fadeInRight,
+.caption-animate .carousel-item .carousel-caption.fadeInRightBig,
+.caption-animate .carousel-item .carousel-caption.fadeInUp,
+.caption-animate .carousel-item .carousel-caption.fadeInUpBig{
+  opacity:0;
+}
+
+.card{
+
+    margin: 0 auto;
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.3);
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+
+
