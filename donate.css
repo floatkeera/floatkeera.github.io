@@ -209,6 +209,7 @@ textarea:focus, input:focus{
 	margin: 0 auto;
 	padding-bottom: 25px;
 	display: block;
+    align-items: center;
 }
 
 hr {
@@ -326,6 +327,7 @@ transition: all 0.5s ease;
   vertical-align: center;
   position: absolute;
   cursor: pointer;
+  content: "Donation Center";
   top: 0;
   left: 0;
   right: 0;
@@ -336,8 +338,11 @@ transition: all 0.5s ease;
 }
 
 .slider:before {
+  font-family: 'Work Sans', sans-serif;
+
   position: absolute;
   content: "";
+  font-size: 2vw;
   height: 3.1vw;
   width: 3.1vw;
   left: 6px;
@@ -381,7 +386,7 @@ input:checked + .slider:before {
 .switch_text_before {
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 4vw;
     vertical-align: top;
     width: 33%;
@@ -391,12 +396,12 @@ input:checked + .slider:before {
 .switch_text_after {
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 4vw;
     vertical-align: top;
     width: 33%;
     text-align: left;
-    padding-left: 10px; 
+    padding-left: 3vw; 
 }
 
 @keyframes slideUp {
@@ -460,6 +465,7 @@ input:checked + .slider:before {
         opacity: 1;
     }
 }
+
 
 
 

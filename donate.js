@@ -29,9 +29,11 @@ $('#filters').on( 'change', 'input', function() {
   if (counter%2 != 0) {
     var filterValue = $( this ).attr('data-filter');
     $grid.isotope({ filter: filterValue });
+    $('switch-text_after').css( 'font-weight', '700' );
   }
   else {
     $grid.isotope({ filter: '.organization' });
+    $('switch-text_before').css( 'font-weight', '700' );
   }
 });
 
@@ -57,7 +59,6 @@ function debounce( fn, threshold ) {
 }
 
 
-
 });
 
 
@@ -81,3 +82,13 @@ var qsRegex;
   });
   $grid.isotope({ filter: '.organization' });
 }
+
+
+function boldbtn() {  
+  console.log("hit")
+  $('switch-text_after').css('font-weight', '700' );
+  console.log("hit 2")
+  $('switch-text_before').css('font-weight', '700' );
+}
+
+
