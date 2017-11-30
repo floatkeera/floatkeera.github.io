@@ -165,7 +165,8 @@ div.tab button.active {
 .title_img {
     width: 10vw;
     height: 10vw;
-    margin-left: 42%;
+    margin: 5px;
+    
 }
 
 
@@ -257,10 +258,31 @@ transition: all 0.5s ease;
      border: solid 1px #00BFA5;
      
 }
+
+.bt.red{
+    background-color: #ed5c5c;
+    border: solid 1px #ed5c5c;
+    
+
+    
+}
+
+.bt.red>a:hover{
+     color: #ed5c5c;
+}
+
+
 .bt:hover{
      background-color: white;
     color: #00BFA5;
     border: solid 1px #00BFA5;
+}
+
+.bt.red:hover{
+    background-color: white;
+    
+    color: #ed5c5c;
+    border: solid 1px #ed5c5c;
 }
 
 .bt>a{
@@ -268,7 +290,7 @@ transition: all 0.5s ease;
     color:white;
 }
 .bt>a:hover{
-     color: #00BFA5;
+   color: #00BFA5;  
 }
 
 .btnss{
