@@ -86,10 +86,14 @@ function boldbtn() {
   if (counter %2 != 0) {
   $('.switch_text_after').css('font-weight', '300' );
   $('.switch_text_before').css('font-weight', '700' );
+  $('.switch_text_before').css('color', '#00BFA5' );
+  $('.switch_text_after').css('color', 'white' );
 }
 else {
   $('.switch_text_after').css('font-weight', '700' );
+  $('.switch_text_after').css('color', '#00BFA5' );
   $('.switch_text_before').css('font-weight', '300' );
+  $('.switch_text_before').css('color', 'white' );
 }
 counter = counter +1;
 }

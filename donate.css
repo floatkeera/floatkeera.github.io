@@ -387,6 +387,7 @@ input:checked + .slider:before {
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    color: #00BFA5;
     font-size: 4vw;
     vertical-align: top;
     width: 33%;
