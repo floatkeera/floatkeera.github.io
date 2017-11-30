@@ -1,0 +1,472 @@
+html { overflow-y: scroll;
+overflow-x: hidden;}
+
+nav {
+    z-index: 11;
+    position: fixed;
+    transition: 0.4s
+}
+
+.navbar {
+	top: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 20px;
+    animation-name: fadein;
+    -webkit-animation-name: fadein;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+}
+
+.nav-trigger {
+    position: absolute;
+    top: 0px;
+}
+
+.navbar-brand{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 250%;
+    font-weight: 100;
+    padding: 0;
+    margin-right: 40px;
+}
+
+.nav-item{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 150%;
+    padding: 0px 10px 0px 10px;
+    line-height: 50px;
+    font-weight: 300;
+}
+.nav-item.active{
+    font-weight: 500;
+}
+
+
+
+.navbar-nav>li>a:hover {
+  background-color: #8a8a8a;
+transition: all 0.3s ease;
+     
+}
+
+
+
+
+
+
+.box {
+	background-size: cover;
+    display: block;
+    text-align: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.title-box {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.outer-grid{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+    font-size: 6vmax;
+    margin-left: 10%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+}
+
+.fadeintitle {
+    visibility: visible;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 48pt;
+    color: #00BFA5;
+    display: block;
+    margin: 20px;
+
+}
+
+.instructions{
+    color:black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24pt;
+  
+    margin: 25px;
+}
+
+.slogan{
+     font-family: 'Work Sans', sans-serif;
+    color: black;
+    font-size: 30pt;
+    font-weight: 700;
+    margin: 25px;
+    
+}
+
+.top-block{
+	height: 75px;
+	margin-top: 25px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+
+.search-box {
+	animation-name: fadein;
+    -webkit-animation-name: fadein;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+    font-family: 'Work Sans', sans-serif;
+	text-align: center;
+	font-weight: 100;
+	font-size: 3vmax;
+	color: white;
+	margin: 0 auto;
+	border: none!important;
+}
+
+input, select, textarea{
+    color: black;
+    font-weight: 100;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    black;
+    font-weight: 100;
+    padding-left: 5px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    black;
+   opacity:  1;
+   font-weight: 100;
+   padding-left: 5px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    black;
+   opacity:  1;
+   font-weight: 100;
+   padding-left: 5px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    black;
+   font-weight: 100;
+   padding-left: 5px;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    black;
+   font-weight: 100;
+   padding-left: 5px;
+
+	color: black;
+	margin: 0 auto;
+	display: block;
+    width: 80%;
+}
+
+.quicksearch{
+    width: 50%;
+    font-weight: 300;
+	font-size: 3vmax;
+    float: left;
+    margin-left: 100px;
+}
+
+.intro {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-weight: 300;
+	font-size: 1vw;
+	color: white;
+	margin: 0 auto;
+	padding-bottom: 25px;
+	display: block;
+    align-items: center;
+}
+
+hr {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	border: 1px solid;
+}
+
+
+
+
+.grid {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+
+.element-item {
+	margin: 15px;
+    
+	text-decoration: none!important;
+	
+
+	height: 250px;
+	width: 250px;
+    float: left;
+
+	background-color: rgba(3, 3, 3, 0.5);
+    transition: border 0.4s ease;
+    transition: background-color 0.4s ease;
+	
+}
+
+
+.element-item:hover {
+	background-color: rgba(20, 20, 20, 0.8);
+
+}
+
+.card-image {
+	height: 140px;
+	width: 140px;
+	padding: 25px;
+}
+
+.name {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	text-decoration: none;
+	padding-top: 15px;
+	font-size: 20pt;
+	color: white;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.navbar-brand{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 250%;
+    font-weight: 100;
+    padding: 0;
+    margin-right: 40px;
+}
+
+.nav-item{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 150%;
+    padding: 0px 10px 0px 10px;
+    line-height: 50px;
+    font-weight: 300;
+}
+.nav-item.active{
+    font-weight: 500;
+}
+
+
+
+.navbar-nav>li>a:hover {
+  background-color: #8a8a8a;
+transition: all 0.5s ease;
+  
+}
+
+
+.navbar{
+      padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+
+/*switch*/
+/* The switch - the box around the slider */
+.switch {
+  margin-top: 15px;
+  position: relative;
+  display: inline-block;
+  width: 15vw;
+  height: 4vw;
+  vertical-align: center;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  vertical-align: center;
+  position: absolute;
+  cursor: pointer;
+  content: "Donation Center";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00BFA5;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  font-family: 'Work Sans', sans-serif;
+
+  position: absolute;
+  content: "";
+  font-size: 2vw;
+  height: 3.1vw;
+  width: 3.1vw;
+  left: 6px;
+  bottom: 6px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+input:checked + .slider {
+  background-color: #00BFA5;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #00BFA5;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(11vw);
+  -ms-transform: translateX(11vw);
+  transform: translateX(11vw);
+}
+
+
+
+/* Rounded sliders */
+
+.hidden_check {
+    /*visibility: hidden;*/
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch_text_before {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+    vertical-align: top;
+    width: 33%;
+    text-align: center;
+}
+
+.switch_text_after {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+    vertical-align: top;
+    width: 33%;
+    text-align: left;
+    padding-left: 3vw; 
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes slideUpSmall {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
