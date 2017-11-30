@@ -85,7 +85,7 @@ transition: all 0.3s ease;
 }
 
 /* Style the tab */
-/*div.tab {
+div.tab {
     float: left;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
@@ -95,9 +95,9 @@ transition: all 0.3s ease;
     color: lightgrey;
     font-family: 'Work Sans', sans-serif;
     vertical-align: middle;
-}*/
+}
 
-div.tab {
+/*div.tab {
     float: left;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
@@ -110,11 +110,10 @@ div.tab {
     padding-bottom: 0px;
     top: 66px;
     z-index: 100;
-}
+    display: inline-block;
+}*/
 
-div.follow {
-    position: fixed;
-}
+
 
 /* Style the buttons inside the tab */
 div.tab button {
@@ -159,7 +158,6 @@ div.tab button.active {
     transition: all 0.5s ease;
     padding: 30px;
     visibility: hidden;
-    margin-top: 66px;
 }
 
 .tabcontent h3 {
