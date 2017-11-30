@@ -386,11 +386,12 @@ input:checked + .slider:before {
 .switch_text_before {
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 4vw;
     vertical-align: top;
     width: 33%;
     text-align: center;
+    transition: 0.4s smooth;
 }
 
 .switch_text_after {

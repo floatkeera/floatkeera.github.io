@@ -29,11 +29,9 @@ $('#filters').on( 'change', 'input', function() {
   if (counter%2 != 0) {
     var filterValue = $( this ).attr('data-filter');
     $grid.isotope({ filter: filterValue });
-    $('switch-text_after').css( 'font-weight', '700' );
   }
   else {
     $grid.isotope({ filter: '.organization' });
-    $('switch-text_before').css( 'font-weight', '700' );
   }
 });
 
@@ -83,12 +81,17 @@ var qsRegex;
   $grid.isotope({ filter: '.organization' });
 }
 
-
+var counter = 0;
 function boldbtn() {  
-  console.log("hit")
-  $('switch-text_after').css('font-weight', '700' );
-  console.log("hit 2")
-  $('switch-text_before').css('font-weight', '700' );
+  if (counter %2 != 0) {
+  $('.switch_text_after').css('font-weight', '300' );
+  $('.switch_text_before').css('font-weight', '700' );
+}
+else {
+  $('.switch_text_after').css('font-weight', '700' );
+  $('.switch_text_before').css('font-weight', '300' );
+}
+counter = counter +1;
 }
 
 
